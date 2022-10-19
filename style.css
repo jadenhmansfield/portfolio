@@ -1,0 +1,229 @@
+/*email logo styling*/
+.material-symbols-outlined {
+    color: #D45880;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.cursor-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #D45880;
+  position: absolute;
+  border-radius: 50%;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color:#FFEBE5;
+  background-size: auto;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: large;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color:#D45880;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .animations a:hover {
+  border-bottom: 3px solid #FFC0B5;
+  transition: all 1s;
+}
+
+.navbar .animations a.active {
+  border-bottom: 3px solid #FFC0B5;
+}
+
+  /*Jaden Mansfield home logo*/
+
+  .navbar .jaden{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+ .jaden img{
+    padding-top: 10px;
+    padding-left: 20px;
+    width:25%;
+  }
+
+  .animations{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+  }
+  
+  .animations a{
+    font-family: 'Poppins', sans-serif;
+    width:80%;
+  }
+
+.navbar .projects{
+  padding-right: 40px;
+}
+
+  /*container for projects, about, and email and linkedin logos*/
+  .navbar .about{
+    width:130px;
+  }
+
+  /*email and linkedin logos*/
+  .navbar .email{
+    width:4.5%;
+    padding-right: 10px;
+  }
+
+  .navbar .email a{
+    color: #D45880;
+    text-decoration: none;
+  }
+
+  .navbar .linkedin{
+    padding-bottom: 3px;
+    width:4.5%;
+    padding-right: 60px;
+  }
+
+  .navbar .linkedin a{
+    color: #D45880;
+    text-decoration: none;
+  }
+
+  /*flower image and title*/
+  .flexbox{
+    padding-top:250px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    width: 1000px;
+    height: 200px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+  }
+
+  .flexbox .image-card img{
+    width:800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexbox .image-card p{
+    width: 400px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color:#D45880;
+  }
+
+#projects{
+  padding-top: 30px;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  color:#D45880;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+  }
+  
+  .projects-container .image-card img {
+    border-radius: 10px; 
+    padding: 10px 16px 6px 50px;
+    width: 480px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects-container .image-card{
+    padding: 70px 16px 6px 50px;
+    width:50%;
+    position: relative;
+  }
+
+.profile-picture img{
+  padding-left: 60px;
+  width:300px;
+}
+
+@media screen and (max-width:1100px) {
+  .jaden img{
+    width:40%;
+  }
+}
+
+
+  /* project titles 
+  .overlay {
+    position: absolute;
+    border-radius: 10px; 
+    padding: 70px 16px 6px 50px;
+    width: 450px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFEBE5;
+  }
+  
+  .image-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #D35980;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+*/
