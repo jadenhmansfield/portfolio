@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /*cursor:none;*/
+   cursor:none;
 }
 
 html{
@@ -191,7 +191,7 @@ header {
     justify-content:space-around;
     align-items:center;
   }
-  /*
+  
   .container .me img {
     border-radius: 10px; 
     padding: 10px 16px 6px 50px;
@@ -210,7 +210,7 @@ header {
     font-family: 'Helvetica', 'Arial', sans-serif;
     color:#D45880;
   }
-  */
+  
 
 #main-menu {
     display: inline;
@@ -320,6 +320,7 @@ header {
       position: relative;
       padding:50px 0px 50px 0px;
     }
+
   }
 
 
