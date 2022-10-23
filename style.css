@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor:none;
+   /*cursor:none;*/
 }
 
 html{
@@ -136,7 +136,7 @@ header {
 
   .flexbox .image-card img{
     width:800px;
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -191,7 +191,7 @@ header {
     justify-content:space-around;
     align-items:center;
   }
-  
+  /*
   .container .me img {
     border-radius: 10px; 
     padding: 10px 16px 6px 50px;
@@ -210,12 +210,118 @@ header {
     font-family: 'Helvetica', 'Arial', sans-serif;
     color:#D45880;
   }
+  */
 
-@media screen and (max-width:1100px) {
-  .jaden img{
-    width:40%;
+#main-menu {
+    display: inline;
   }
+#hamburger-menu {
+    display: none;
+  }
+
+@media screen and (max-width:1024px) {
+  .jaden img{
+    width:20%;
+  }
+
+  .flexbox{
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .flexbox .image-card img{
+    width:100%;
+  }
+
+  .flexbox .image-card p{
+    width:100%;
+    font-size: 30px;
+  }
+
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+  #menu {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  .projects-container{
+    flex-direction: column;
+    width: 100%;
+    padding:0px 0px 0px 0px;
+  }
+
+  .projects-container .image-card img {
+    border-radius: 10px; 
+    width: 100%;
+    padding: 0px 0px 0px 0px;
 }
+
+.projects-container .image-card{
+  position: relative;
+  padding:50px 0px 50px 0px;
+}
+
+
+}
+
+@media screen and (max-width:480px) {
+    #main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+      #menu {
+        transform: none;
+        opacity: 0;
+        transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      }
+
+      .flexbox{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+      }
+
+      .flexbox .image-card img{
+        width:100%;
+      }
+
+      .flexbox .image-card p{
+        width:100%;
+        font-size: medium;
+      }
+
+      .projects-container{
+        flex-direction: column;
+        width: 100%;
+        padding:0px 0px 0px 0px;
+      }
+
+      .projects-container .image-card img {
+        border-radius: 10px; 
+        width: 100%;
+        height:150px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .projects-container .image-card{
+      position: relative;
+      padding:50px 0px 50px 0px;
+    }
+  }
+
 
 
   /* project titles 
@@ -250,3 +356,141 @@ header {
   }
 
 */
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  font-family: 'Poppins', sans-serif;
+  color:#D45880;
+}
+
+a
+{
+  text-decoration: none;
+  color: #D45880;
+  transition: color 0.3s ease;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #D45880;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #D45880;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 250px;
+  margin: 0px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: 0px;
+  
+  background: #FFEBE5;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  opacity: 1;
+}
+
