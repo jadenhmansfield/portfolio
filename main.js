@@ -1,4 +1,5 @@
 //credits to sarah
+//tracks cursor
 
 var cursor = {
     _x: 0,
@@ -30,6 +31,7 @@ var cursor = {
   
   cursor.func();
 
+//flower rotate on scroll
 
 window.onscroll = function() {
   var theta = document.documentElement.scrollTop / 50 % Math.PI;
@@ -37,6 +39,7 @@ window.onscroll = function() {
 document.getElementById('flower').style.transform ='rotate(' + theta + 'rad)';
 }
 
+//watering can on hover over flower image
 /*
 document.getElementById("flowers").addEventListener("click", myFunction);
 
