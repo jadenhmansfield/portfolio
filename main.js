@@ -29,3 +29,20 @@ var cursor = {
   }
   
   cursor.func();
+
+
+window.onscroll = function() {
+  var theta = document.documentElement.scrollTop / 50 % Math.PI;
+
+document.getElementById('flower').style.transform ='rotate(' + theta + 'rad)';
+}
+
+/*
+document.getElementById("flowers").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.body.style.cursor = cursor:url('http://upload.wikimedia.org/wikipedia/commons/d/de/POL_apple.jpg');
+}
+*/
+
+

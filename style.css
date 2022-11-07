@@ -246,6 +246,7 @@ header {
   }
   #hamburger-menu {
     display: inline;
+    height:100vh;
   }
   #menu {
     transform: none;
@@ -323,7 +324,15 @@ header {
 
   }
 
+  .flower{
+    display: flex;
+    justify-content: center;
+    padding-top: 115px;
+  }
 
+  .flower img {
+    height: 70px;
+}
 
   /* project titles 
   .overlay {
@@ -468,20 +477,15 @@ a
   padding: 50px;
   padding-top: 125px;
   right: 0px;
-  
   background: #FFEBE5;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu li{
   padding: 10px 0;
   font-size: 22px;
 }
@@ -489,9 +493,10 @@ a
 /*
  * And let's fade it in from the left
  */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul{
   transform: none;
   opacity: 1;
 }
+
+
 
