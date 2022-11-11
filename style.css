@@ -148,6 +148,19 @@ header {
     color:#D45880;
   }
 
+  span{
+    opacity: 0;
+    transition: all 2s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+  span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
 #projects{
   padding-top: 30px;
   font-size: 25px;
@@ -168,6 +181,7 @@ header {
   }
   
   .projects-container .image-card img {
+    opacity: 1;
     border-radius: 10px; 
     padding: 10px 16px 6px 50px;
     width: 480px;
@@ -175,6 +189,8 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
   }
 
   .projects-container .image-card{
@@ -211,6 +227,38 @@ header {
     color:#D45880;
   }
   
+  .middle {
+    position: absolute;
+    border-radius: 10px; 
+    padding: 70px 16px 6px 50px;
+    width: 450px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFEBE5;
+  }
+  
+  
+  .image-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #D35980;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
 
 #main-menu {
     display: inline;
@@ -333,40 +381,6 @@ header {
   .flower img {
     height: 70px;
 }
-
-  /* project titles 
-  .overlay {
-    position: absolute;
-    border-radius: 10px; 
-    padding: 70px 16px 6px 50px;
-    width: 450px;
-    height:300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #FFEBE5;
-  }
-  
-  .image-card:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: #D35980;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-*/
-
 
 body
 {
