@@ -105,6 +105,15 @@ header {
     padding-right: 10px;
   }
 
+    .navbar .email .grow {
+      transition: all .2s ease-in-out;
+    }
+      .navbar .email:hover {
+        transform: scale(1.2);
+      }
+    
+  
+
   .navbar .email a{
     color: #D45880;
     text-decoration: none;
@@ -115,6 +124,13 @@ header {
     width:4.5%;
     padding-right: 60px;
   }
+
+  .navbar .linkedin .grow {
+    transition: all .2s ease-in-out;
+  }
+    .navbar .linkedin:hover {
+      transform: scale(1.2);
+    }
 
   .navbar .linkedin a{
     color: #D45880;
