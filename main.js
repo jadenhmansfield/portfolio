@@ -32,11 +32,13 @@ var cursor = {
   cursor.func();
 
 //flower rotate on scroll
+window.onscroll = function () {
+  scrollRotate();
+};
 
-window.onscroll = function() {
-  var theta = document.documentElement.scrollTop / 50 % Math.PI;
-
-document.getElementById('flower').style.transform ='rotate(' + theta + 'rad)';
+function scrollRotate() {
+  let image = document.getElementById('flower');
+  image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
 }
 
 //watering can on hover over flower image
