@@ -94,14 +94,14 @@ header {
 
   /*Jaden Mansfield home logo*/
 
-  .navbar #jaden{
+  .navbar .jaden{
     display:none;
     position: sticky;
     top: 0;
     z-index: 100;
   }
 
- #jaden img{
+ .jaden img{
     padding-top: 10px;
     padding-left: 20px;
     width:25%;
