@@ -3,8 +3,10 @@
 var jaden=document.getElementById("jadenlogo");
 var loader=document.getElementById("preloader");
     window.addEventListener("load", function(){
+      setTimeout(() => {
         loader.style.display= "none";
         jaden.style.display="inline";
+      }, 10000);
     })
 
 
