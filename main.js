@@ -1,6 +1,6 @@
 //preloader
 
-var jaden=document.getElementsByClassName("jaden");
+var jaden=document.getElementById("jadenlogo");
 var loader=document.getElementById("preloader");
     window.addEventListener("load", function(){
         loader.style.display= "none";

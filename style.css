@@ -95,11 +95,14 @@ header {
   /*Jaden Mansfield home logo*/
 
   .navbar .jaden{
-    display:none;
     position: sticky;
     top: 0;
     z-index: 100;
   }
+
+#jadenlogo{
+  display:none;
+}
 
  .jaden img{
     padding-top: 10px;
@@ -140,7 +143,6 @@ header {
         transform: scale(1.2);
       }
     
-  
 
   .navbar .email a{
     color: #D45880;
