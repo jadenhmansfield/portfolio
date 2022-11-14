@@ -1,8 +1,10 @@
 //preloader
 
+var jaden=document.getElementsByClassName("jaden");
 var loader=document.getElementById("preloader");
     window.addEventListener("load", function(){
         loader.style.display= "none";
+        jaden.style.display="inline";
     })
 
 
