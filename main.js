@@ -1,3 +1,30 @@
+/*
+var client = contentful.createClient({
+  space: 'tvyvjos0u241',
+  accessToken: 'ppIm6YyIgx-l4-axduEOVvQFz2KcHbxZbUr3tMPdmzM',
+});
+
+client.getEntries().then(entries => {
+  // log the title for all the entries that have it
+
+let project=document.getElementById('project');
+
+  entries.items.forEach(entry => {
+    console.log(entry);
+    document.createElement('hi');
+    title.textContent.add('blog-title');
+    blog.append(title);
+
+    let image = document.createElement('img');
+    image.src= entry.fields.image.fields.file.url;
+    image.classList.add('blog-image');
+    
+
+
+  });
+});
+*/
+
 //preloader
 
 var jaden=document.getElementById("jadenlogo");
@@ -8,40 +35,6 @@ var loader=document.getElementById("preloader");
         jaden.style.display="inline";
       }, 10000);
     })
-
-
-//credits to sarah
-//tracks cursor
-
-var cursor = {
-    _x: 0,
-    _y: 0,
-    $dot: document.querySelector('.cursor-dot'),
-    
-    func: function() {
-      this.setupEventListeners();
-    },
-    
-    setupEventListeners: function() {
-      var self = this;
-      document.addEventListener('mousemove', function(x) {
-        //showing the cursor
-        self.cursorVisible = true;
-        if (self.cursorVisible) {
-          self.$dot.style.opacity = 1;
-        } else {
-          self.$dot.style.opacity = 0;
-        }
-        //positioning cursor
-        self.endX = x.pageX;
-        self.endY = x.pageY;
-        self.$dot.style.top = self.endY + 'px';
-        self.$dot.style.left = self.endX +'px';
-      });
-    },
-  }
-  
-  cursor.func();
 
 //flower rotate on scroll
 
