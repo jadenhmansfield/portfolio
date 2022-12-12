@@ -271,6 +271,7 @@ a:hover
 }
 
 .project_title h1{
+font-family: 'Volkorn', sans-serif;
 text-align:center;
 margin-bottom: 20px;
 }
@@ -285,7 +286,9 @@ margin-bottom: 20px;
 
 .project_image p{
   font-size: 20px;
+  font-family: 'Volkorn', sans-serif;
   text-align:center;
+  margin-bottom:40px;
 }
 
 .project_image_4 img{
@@ -298,5 +301,20 @@ margin-bottom: 20px;
 
 .project_image_4 p{
   font-size: 20px;
+  font-family: 'Volkorn', sans-serif;
   text-align:center;
+  margin-bottom:40px;
+}
+
+h2{
+  font-size: 20px;
+  font-family: 'Volkorn', sans-serif;
+  text-align:center;
+}
+
+ul{
+  font-size: 20px;
+  font-family: 'Volkorn', sans-serif;
+  text-align:center;
+  margin-bottom:100px;
 }
