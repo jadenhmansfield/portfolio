@@ -33,8 +33,10 @@ var loader=document.getElementById("preloader");
       setTimeout(() => {
         loader.style.display= "none";
         jaden.style.display="inline";
-      }, 10000);
+      }, 2000);
     })
+
+    
 
 //flower rotate on scroll
 
@@ -78,13 +80,14 @@ function animComplete(){
     timer = null;
 }
 
-//watering can on hover over flower image
-/*
-document.getElementById("flowers").addEventListener("click", myFunction);
+var animation=bodymovin.loadAnimation({
+  container: document.getElementById('anim'),
+  renderer: 'svg',
+  loop:true,
+  autoplay:true,
+  path:'data.json'
+})
 
-function myFunction() {
-  document.body.style.cursor = cursor:url('http://upload.wikimedia.org/wikipedia/commons/d/de/POL_apple.jpg');
-}
-*/
+
 
 

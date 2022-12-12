@@ -5,30 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="/your-path-to-uicons/css/uicons-brands.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <title>Jaden Mansfield ✿ About</title>  
-    <link rel = "icon" href = "flower logo.svg"  type = "image/x-icon"> 
+    <link rel = "icon" href = "images/flower logo.png"  type = "image/x-icon">  
 </head>
 
 <body>
-    <div class="cursor-dot"></div>
-    <script src='main.js'></script>
-        <header>
-            <div class= "navbar">
-                <div class="jaden">
-                    <a href="/portfolio/">
-                    <img src="images/jaden mansfield logo.png" /> </a>
-                </div>
+    <header>
+        <label id="hamburger-menu">
+            <div class="jaden">
+                <a href="index.html">
+                <img src="images/jaden mansfield logo.png" /> </a>
             </div>
+        <nav role='navigation'>
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            
+              <ul id="menu">
+                <a href="#projects"><li>projects</li></a>
+                <a href="about.html"><li>about me</li></a>
+                <a href="mailto: jadenhmansfield@gmail.com"><li><i class="material-symbols-outlined" style="font-size: 35px">
+                   email</i></li></a>
+                    <a href="https://www.linkedin.com/in/jaden-mansfield-982115252/"><li><i class="fa fa-linkedin-square" style="font-size: 30px">
+                    </i></li></a>
+              </ul>
+            </div>
+          </nav>
+        </label>
+
+    <label id="main-menu">
+        <div class= "navbar">
+            <div id="jadenlogo" class="jaden">
+                <a href="index.html">
+                <img src="images/jaden mansfield logo.png" /> </a>
+            </div>
+        <div class="animations">
+            <div class="projects">
+                <a href="#projects">projects</a> 
+            </div>
+            <div class="about">
+                <a href="about.html">about me</a> 
+            </div>
+        </div>
+            <div class="email">
+                <a href="mailto: jadenhmansfield@gmail.com"><i class="material-symbols-outlined" style="font-size: 35px">
+                email</i></a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/jaden-mansfield-982115252/"><i class="fa fa-linkedin-square" style="font-size: 30px">
+                </i></a>
+            </div>
+        </div>
+    </label>
+
+
                 <div class="container">
                     <div class="me">
                     <img src="images/about picture.png" alt="profile pic"/>
                 </div>
                 <div class="description">
                     <h1>nice to meet you! </h1>
-                    <p>I am currently a sophmore studying interactive media arts at New York Univeristy. I love to make vibrant and effective designs. I am passionate about climate change and have explored interactive installations about this topic.  </p>
+                    <p>I am currently a sophmore studying interactive media arts at New York University. I love to make vibrant, effective, and accessible designs. I am passionate about climate change and have explored interactive installations about this topic.  </p>
+                    <h2>skills </h2>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Procreate</li>
+                        <li>Premiere Pro</li>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                        <li>After Effects</li>
+                      </ul>
                 </div>
             </div>
     </header>
+
+    <main>
+        <div id="projects"></div> 
+ 
+ <div class="projects-container">
+    <div id="target"></div>
+ </div>
+ </main>
 </body>
+<script src='about.js'></script>
 </html>
