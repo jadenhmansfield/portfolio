@@ -63,9 +63,9 @@ header {
     z-index: 100;
   }
 
-#jadenlogo{
-  display:none;
-}
+  #jadenlogo{
+    display:none;
+  }
 
  .jaden img{
     padding-top: 10px;
