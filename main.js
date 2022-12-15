@@ -33,7 +33,7 @@ var loader=document.getElementById("preloader");
       setTimeout(() => {
         loader.style.display= "none";
         jaden.style.display="inline";
-      }, 2000);
+      }, 10000);
     })
 
     
