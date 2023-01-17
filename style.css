@@ -17,9 +17,7 @@
 #preloader img {
   transition: transform .7s ease-in-out;
 }
-#preloader img:hover {
-  transform: rotate(360deg);
-}
+
 
 /*email logo styling*/
 .material-symbols-outlined {
